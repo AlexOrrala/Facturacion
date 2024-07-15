@@ -8,3 +8,13 @@ C:\Users\alex_\source\repos\Facturacion1\Facturacion1\obj\Debug\Facturacion1.csp
 C:\Users\alex_\source\repos\Facturacion1\Facturacion1\obj\Debug\Facturacion1.csproj.CoreCompileInputs.cache
 C:\Users\alex_\source\repos\Facturacion1\Facturacion1\obj\Debug\Facturacion1.exe
 C:\Users\alex_\source\repos\Facturacion1\Facturacion1\obj\Debug\Facturacion1.pdb
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\bin\Debug\Facturacion1.exe.config
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\bin\Debug\Facturacion1.exe
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\bin\Debug\Facturacion1.pdb
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.csproj.AssemblyReference.cache
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.Form1.resources
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.Properties.Resources.resources
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.csproj.GenerateResource.cache
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.csproj.CoreCompileInputs.cache
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.exe
+C:\Users\alex_\Documents\GitHub\Facturacion\Facturacion1\obj\Debug\Facturacion1.pdb

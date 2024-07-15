@@ -37,7 +37,7 @@
             this.Table_iva12 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Table_Subtotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateTime_fechafact = new System.Windows.Forms.DateTimePicker();
             this.txt_cliente = new System.Windows.Forms.TextBox();
             this.txt_numfact = new System.Windows.Forms.TextBox();
             this.Butt_CargarDatos = new System.Windows.Forms.Button();
@@ -129,12 +129,12 @@
             this.label3.Text = "Nº:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // dateTimePicker1
+            // DateTime_fechafact
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(141, 128);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.DateTime_fechafact.Location = new System.Drawing.Point(141, 128);
+            this.DateTime_fechafact.Name = "DateTime_fechafact";
+            this.DateTime_fechafact.Size = new System.Drawing.Size(200, 20);
+            this.DateTime_fechafact.TabIndex = 4;
             // 
             // txt_cliente
             // 
@@ -263,7 +263,7 @@
             this.Controls.Add(this.Butt_CargarDatos);
             this.Controls.Add(this.txt_numfact);
             this.Controls.Add(this.txt_cliente);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.DateTime_fechafact);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Table_productos);
             this.Controls.Add(this.label2);
@@ -283,7 +283,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView Table_productos;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DateTime_fechafact;
         private System.Windows.Forms.TextBox txt_cliente;
         private System.Windows.Forms.TextBox txt_numfact;
         private System.Windows.Forms.Button Butt_CargarDatos;
