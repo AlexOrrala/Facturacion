@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 namespace Facturacion1
 {
     internal class Producto{
-        private string Producto_nombre;
-        private double Preciounitario;
-        private int Cantidad;
-        private double subtotal;
-        private Boolean iva;
+        private string Producto_nombre { get; set; }
+        private double Preciounitario { get; set; }
+        private int Cantidad { get; set; }
+        private double subtotal { get; set; }
+        private Boolean iva { get; set; }
 
         public Producto(string producto_nombre, double preciounitario, int cantidad, Boolean iva)
         {
@@ -50,9 +50,10 @@ namespace Facturacion1
             }
         }
 
-            public string getID_FacturaProducto_nombre() { return Producto_nombre; }
+        public string getProducto_nombre() { return Producto_nombre; }
         public double getPreciounitario() { return Preciounitario; }
         public int getCantidad() { return Cantidad; }
+        public Boolean getIva() { return iva; }
         public double getsubtotal() { return subtotal; }
 
 

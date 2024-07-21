@@ -40,17 +40,17 @@
             this.DateTime_fechafact = new System.Windows.Forms.DateTimePicker();
             this.txt_cliente = new System.Windows.Forms.TextBox();
             this.txt_numfact = new System.Windows.Forms.TextBox();
-            this.Butt_CargarDatos = new System.Windows.Forms.Button();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.txt_baseimponible12 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_iva = new System.Windows.Forms.TextBox();
             this.txt_Total = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_baseimponible0 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.Butt_CargarDatos = new System.Windows.Forms.Button();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.Report_Viewer = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.Table_productos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,17 +153,6 @@
             this.txt_numfact.Size = new System.Drawing.Size(57, 35);
             this.txt_numfact.TabIndex = 6;
             // 
-            // Butt_CargarDatos
-            // 
-            this.Butt_CargarDatos.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Butt_CargarDatos.Location = new System.Drawing.Point(54, 531);
-            this.Butt_CargarDatos.Name = "Butt_CargarDatos";
-            this.Butt_CargarDatos.Size = new System.Drawing.Size(97, 38);
-            this.Butt_CargarDatos.TabIndex = 7;
-            this.Butt_CargarDatos.Text = "Cargar Datos";
-            this.Butt_CargarDatos.UseVisualStyleBackColor = true;
-            this.Butt_CargarDatos.Click += new System.EventHandler(this.Butt_CargarDatos_Click);
-            // 
             // txt_baseimponible12
             // 
             this.txt_baseimponible12.Enabled = false;
@@ -246,12 +235,45 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Base Imponible 0 %:";
             // 
+            // Butt_CargarDatos
+            // 
+            this.Butt_CargarDatos.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Butt_CargarDatos.Location = new System.Drawing.Point(54, 531);
+            this.Butt_CargarDatos.Name = "Butt_CargarDatos";
+            this.Butt_CargarDatos.Size = new System.Drawing.Size(97, 38);
+            this.Butt_CargarDatos.TabIndex = 7;
+            this.Butt_CargarDatos.Text = "Cargar Datos";
+            this.Butt_CargarDatos.UseVisualStyleBackColor = true;
+            this.Butt_CargarDatos.Click += new System.EventHandler(this.Butt_CargarDatos_Click);
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // Report_Viewer
+            // 
+            this.Report_Viewer.AutoSize = true;
+            this.Report_Viewer.IsDocumentMapWidthFixed = true;
+            this.Report_Viewer.LocalReport.ReportEmbeddedResource = "Facturacion1.Report1.rdlc";
+            this.Report_Viewer.Location = new System.Drawing.Point(862, 81);
+            this.Report_Viewer.Name = "Report_Viewer";
+            this.Report_Viewer.PageCountMode = Microsoft.Reporting.WinForms.PageCountMode.Actual;
+            this.Report_Viewer.ServerReport.BearerToken = null;
+            this.Report_Viewer.Size = new System.Drawing.Size(558, 544);
+            this.Report_Viewer.TabIndex = 16;
+            this.Report_Viewer.ReportRefresh += new System.ComponentModel.CancelEventHandler(this.Report_ViewerReportRefresh);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(880, 611);
+            this.ClientSize = new System.Drawing.Size(1432, 716);
+            this.Controls.Add(this.Report_Viewer);
             this.Controls.Add(this.txt_baseimponible0);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_Total);
@@ -286,11 +308,8 @@
         private System.Windows.Forms.DateTimePicker DateTime_fechafact;
         private System.Windows.Forms.TextBox txt_cliente;
         private System.Windows.Forms.TextBox txt_numfact;
-        private System.Windows.Forms.Button Butt_CargarDatos;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txt_baseimponible12;
         private System.Windows.Forms.Label label4;
-        private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_iva;
         private System.Windows.Forms.TextBox txt_Total;
@@ -302,6 +321,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Table_Cantidad;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Table_iva12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Table_Subtotal;
+        private System.Windows.Forms.Button Butt_CargarDatos;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer Report_Viewer;
     }
 }
 

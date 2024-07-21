@@ -78,6 +78,7 @@ namespace Facturacion1
         public double getBaseimponible12( ) { return Baseimponible12; }
         public double getTotal() { return total; }
         public double getiva () { return iva12; }
+        public List<Producto> getProductos() { return Productos; }
 
         public void setID_Factura(int ID) {  ID_Factura = ID; }
         public void setCliente(string nombre) {  Cliente=nombre; }
